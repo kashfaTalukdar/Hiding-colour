@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var redImage: UIImageView!
+    @IBOutlet weak var blueImage: UIImageView!
+    @IBAction func blueButton(sender: AnyObject) {
+        blueImage.hidden=true
+    }
+    @IBAction func redButton(sender: AnyObject) {
+        redImage.hidden=true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
